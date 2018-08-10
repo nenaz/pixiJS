@@ -14,10 +14,10 @@ let app = new Application({
 document.getElementById('index').appendChild(app.view)
 
 loader
-    .add("../assets/carsCop.png")
+    .add("carsCop", "../assets/carsCop.png")
     .load(setup);
 
 function setup() {
-    let cop = new Sprite(resources["../assets/carsCop.png"].texture);
+    let cop = new Sprite(resources[carsCop].texture);
     app.stage.addChild(cop);
 }
